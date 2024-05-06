@@ -3,11 +3,25 @@
 using namespace std;
 
 int main (){
-    string email, emailcorreto, name, cpf, tlf, senha, senhacorreta, namep, raca, sex, idd, especi, namp, rac, sexo, idade, espc;
-    
+    string email, emailcorreto;
+    string name;
+    string cpf;
+    string tlf;
+    string senha, senhacorreta;
+    string namep;
+    string raca;
+    string sex;
+    string idd;
+    string especi;
+    string namp;
+    string rac;
+    string sexo;
+    string idade; 
+    string espc;
+
     cout<<"\n Olá somos  a HealthCare Pet System.\n";
 
-    cout<<"\n Tem interesse em utilizar nossos serviÃ§os?";
+    cout<<"\n Tem interesse em utilizar nossos serviços?";
 
     cout<<"\n Então realize seu cadastro";
 
@@ -15,25 +29,30 @@ int main (){
 
     cout<<"\n Insira um endereço de e-mail \n";
     cout<<"-->: ";
-    cin>>email;
+    //cin>>email;
+    getline(cin, email);
 
     cout<<"\n Insira seu nome completo \n";
     cout<<"-->: ";
-    cin>>name;
+    //cin>>name;
+    getline(cin, name);
 
     cout<<"\n Insira seu cpf \n";
     cout<<"-->: ";
-    cin>>cpf;
+    //cin>>cpf;
+    getline(cin, cpf);
 
     cout<<"\n Telefone \n";
     cout<<"-->: ";
-    cin>>tlf;
+    //cin>>tlf;
+    getline(cin, tlf);
 
     cout<<"\n Crie uma senha \n";
 
     cout<<"\n formule uma senha \n";
     cout<<"-->: ";
-    cin>>senha;
+    //cin>>senha;
+    getline(cin, senha);
 
     cout<<"\n Verificar informações\n";
 
@@ -47,23 +66,28 @@ int main (){
     
     cout<<"\n insira o nome do Pet\n";
     cout<<"-->: ";
-    cin>>namep;
+    //cin>>namep;
+    getline(cin, namep);
     
     cout<<"\n raça\n";
     cout<<"-->: ";
-    cin>>raca;
+    //cin>>raca;
+    getline(cin, raca);
     
     cout<<"\n sexo\n";
     cout<<"-->: ";
-    cin>>sex;
+    //cin>>sex;
+    getline(cin, sex);
     
     cout<<"\n idade\n";
     cout<<"-->: ";
-    cin>>idd;
+    //cin>>idd;
+    getline(cin, idd);
     
     cout<<"\n especie\n";
     cout<<"-->: ";
-    cin>>especi;
+    //cin>>especi;
+    getline(cin, especi);
     
     int pet2;
     
@@ -72,28 +96,34 @@ int main (){
     	cout<<"\n 1 - SIM\n";
     	cout<<"\n 2 - NÃO\n";
     	cin>>pet2;
+    	cin.ignore();
 	}
 	switch(pet2){
 		case 1:
 			cout<<"\n insira o nome do Pet\n";
 			cout<<"-->: ";
-			cin>>namp;
+			//cin>>namp;
+			getline(cin, namp);
 			
 			cout<<"\n raça\n";
 			cout<<"-->: ";
-			cin>>rac;
+			//cin>>rac;
+			getline(cin, rac);
 			
 			cout<<"\n sexo\n";
 			cout<<"-->: ";
-			cin>>sexo;
+			//cin>>sexo;
+			getline(cin, sexo);
 			
 			cout<<"\n idade\n";
 			cout<<"-->: ";
-			cin>>idade;
+			//cin>>idade;
+			getline(cin, idade);
 			
 			cout<<"\n especie\n";
 			cout<<"-->: ";
-			cin>>espc;
+			//cin>>espc;
+			getline(cin, espc);
 			
 			cout<<"\nPARA VERIFICAR OS SEUS DADOS E OS DADOS DO PET, FAÇA O LOGIN\n";
 			
@@ -109,6 +139,7 @@ int main (){
         cout<<"\n 1 - SIM\n";
         cout<<"\n 2 - NÃO\n";
         cin>>logar;
+        cin.ignore();
     }
     switch(logar){
         case 1:
@@ -117,11 +148,13 @@ int main (){
 
                 cout<<"\n Insira seu e-mail\n";
                 cout<<"-->: ";
-                cin>>emailcorreto;
+                //cin>>emailcorreto;
+                getline(cin, emailcorreto);
 
                 cout<<"\n Insira sua senha\n";
                 cout<<"-->: ";
-                cin>>senhacorreta;
+                //cin>>senhacorreta;
+                getline(cin, senhacorreta);
 
                 if(email!=emailcorreto || senha!=senhacorreta){
                     cout<<"\n E-mail ou senha incorretos, tente novamente!\n";
@@ -152,6 +185,6 @@ int main (){
     cout<<"\n\nNome: "<<namp;
     cout<<"\n\nIdade: "<<idade;
     cout<<"\n\nRaça: "<<rac;
-    cout<<"\n\nEspecie: "<<espc;
+    cout<<"\n\nEspecie:"<<espc;
 			
 }
