@@ -185,6 +185,6 @@ int main (){
     cout<<"\n\nNome: "<<namp;
     cout<<"\n\nIdade: "<<idade;
     cout<<"\n\nRaça: "<<rac;
-    cout<<"\n\nEspecie:"<<espc;
+    cout<<"\n\nEspecie: "<<espc;
 			
 }
