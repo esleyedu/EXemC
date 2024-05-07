@@ -164,6 +164,20 @@ int main (){
 
                     cout<<"\n aqui você pode acessar as informações referentes aos seus dados e dados dos seus pets.";
                     
+                    cout<<"\n\nNome: "<<name;
+                    cout<<"\n\nCPF: "<<cpf;
+                    cout<<"\n\nCelular: "<<tlf;
+                    cout<<"\n\ne-mail: "<<email;
+    
+                    cout<<"\n\nNome: "<<namep;
+                    cout<<"\n\nIdade: "<<idd;
+                    cout<<"\n\nRaça: "<<raca;
+                    cout<<"\n\nEspecie: "<<especi;
+    
+                    cout<<"\n\nNome: "<<namp;
+                    cout<<"\n\nIdade: "<<idade;
+                    cout<<"\n\nRaça: "<<rac;
+                    cout<<"\n\nEspecie: "<<espc;
                 }
             }
             break;
@@ -172,19 +186,6 @@ int main (){
             break;
 
     }
-    cout<<"\n\nNome: "<<name;
-    cout<<"\n\nCPF: "<<cpf;
-    cout<<"\n\nCelular: "<<tlf;
-    cout<<"\n\ne-mail: "<<email;
     
-    cout<<"\n\nNome: "<<namep;
-    cout<<"\n\nIdade: "<<idd;
-    cout<<"\n\nRaça: "<<raca;
-    cout<<"\n\nEspecie: "<<especi;
-    
-    cout<<"\n\nNome: "<<namp;
-    cout<<"\n\nIdade: "<<idade;
-    cout<<"\n\nRaça: "<<rac;
-    cout<<"\n\nEspecie: "<<espc;
 			
 }
